@@ -38,7 +38,7 @@ fetchdata()
 console.log(movieList,"product data")
 return <div className={styles.wrapper}>
 {
-   movieList.map(item => <Card movies = {item}/> )
+   movieList.length !==0 && movieList.map(item => <Card movies = {item}/> )
 }
 </div>
 
